@@ -1,0 +1,28 @@
+{
+  // Abilita i punti e virgola alla fine delle istruzioni.
+  "semi": true,
+
+  // Aggiunge una virgola finale a tutti gli elementi negli array.
+  "trailingComma": "es5",
+
+  // Usa virgolette singole per le stringhe.
+  "singleQuote": true,
+
+  // Limita la larghezza di riga a 100 caratteri.
+  "printWidth": 100,
+
+  // Imposta la larghezza della tabulazione a 2 spazi.
+  "tabWidth": 2,
+
+  // Aggiunge spazi all'interno delle parentesi quadre e graffe.
+  "bracketSpacing": true,
+
+  // Evita le parentesi attorno alle funzioni con una sola istruzione.
+  "arrowParens": "avoid",
+
+  // Usa il carattere di ritorno a capo come fine linea.
+  "endOfLine": "lf",
+
+  // Ignora i file di configurazione altrui, come ad esempio .prettierrc o .editorconfig.
+  "ignorePath": ".prettierignore"
+}

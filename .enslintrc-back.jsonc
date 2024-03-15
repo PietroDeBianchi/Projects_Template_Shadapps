@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    // Aggiungi opzioni del parser se necessario
+    // "requireConfigFile": false,
+    // "ecmaFeatures": {
+    //   "experimentalObjectRestSpread": true,
+    //   "impliedStrict": true
+    // }
+  },
+  "rules": {
+    "no-undef": "error", // Segnala variabili non definite
+    "no-mixed-spaces-and-tabs": 0, // Disabilita l'uso misto di spazi e tabulazioni
+    "indent": ["error", 2], // Utilizza l'indentazione di due spazi
+    "comma-spacing": ["error", { "before": false, "after": true }], // Spaziatura coerente tra virgole
+    "no-shadow": 0, // Disabilita l'ombreggiamento delle variabili
+    "no-console": 0, // Disabilita il segnalare l'uso di console.log()
+    "object-curly-spacing": ["error", "always"], // Spaziatura coerente negli oggetti letterali
+    "quotes": ["error", "single"], // Utilizza virgolette singole per le stringhe
+    "no-multi-spaces": "warn", // Segnala l'uso di spazi multipli
+    "import/no-cycle": 0, // Disabilita il segnalare i cicli di importazione
+    "arrow-body-style": 0, // Disabilita la forma compatta per le funzioni di arrow
+    "consistent-return": 1, // Garantisce una coerenza nelle dichiarazioni di ritorno
+    "no-param-reassign": 0, // Disabilita la riassegnazione di parametri di funzione
+    "no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }], // Vietato l'uso di variabili prima della loro definizione
+    "no-underscore-dangle": 0, // Disabilita l'uso di trattini bassi come prefisso per le proprietà
+    "no-unreachable": 1, // Segnala codice non raggiungibile
+    "key-spacing": ["warn", { "afterColon": true }], // Spaziatura coerente dopo i due punti
+    "no-unsafe-optional-chaining": 1, // Segnala l'uso non sicuro di optional chaining
+    "import/prefer-default-export": 0, // Disabilita il segnalare la preferenza per l'esportazione predefinita
+    "import/no-extraneous-dependencies": 0, // Disabilita il segnalare le dipendenze non utilizzate
+    "no-trailing-spaces": 1, // Segnala gli spazi alla fine delle linee
+    "no-multiple-empty-lines": [1, { "max": 1, "maxEOF": 0, "maxBOF": 0 }], // Segnala massimo una linea vuota
+    "semi": ["error", "always"], // Utilizza sempre il punto e virgola alla fine delle istruzioni
+
+    "no-unused-vars": [1, { "ignoreRestSiblings": false }], // Segnala tutte le variabili non utilizzate
+    "prefer-destructuring": [1, { "object": true, "array": false }] // Favorisce la destrutturazione per oggetti ma non per array
+  }
+}

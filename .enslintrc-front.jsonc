@@ -1,0 +1,36 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals", // Estende le regole di Next.js per le performance web core
+    "plugin:@next/next/recommended", // Configurazione raccomandata per Next.js
+    "eslint:recommended" // Configurazione raccomandata di ESLint
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    // Aggiungi opzioni del parser se necessario
+    // "project": "./tsconfig.json"
+  },
+  "rules": {
+    // Regole generiche
+    "no-undef": "error", // Segnala variabili non definite
+    "no-alert": "warn", // Segnala l'uso di alert() che può essere considerato invasivo
+    "camelcase": "error", // Richiede che le variabili seguano la convenzione camelCase
+    "no-console": "warn", // Segnala l'uso di console.log() che può essere dimenticato nei build di produzione
+    "no-param-reassign": "warn", // Segnala la riassegnazione di parametri di funzione, può portare a errori di logica
+    "naming-convention": "warn", // Consente di definire regole di naming per uniformità del codice
+
+    // Regole specifiche per React
+    "react/no-children-prop": "error", // Proibisce l'uso della prop 'children' in componenti React
+    "react/jsx-props-no-spreading": "warn", // Segnala l'uso di {...props} quando non è necessario
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx", ".jsx"] }], // Richiede estensioni .tsx o .jsx per i file contenenti JSX
+    "react/jsx-no-useless-fragment": "error", // Segnala l'uso inutile di <React.Fragment>
+    "react/function-component-definition": ["error", { "namedComponents": "arrow-function" }], // Richiede l'uso di arrow function per definire i componenti React
+    "jsx-a11y/control-has-associated-label": "warn", // Segnala quando un elemento di controllo non ha un'etichetta associata
+
+    // Regole esistenti con modifiche
+    "prefer-destructuring": ["error", { "object": true, "array": true }], // Richiede l'uso della destrutturazione per oggetti e array
+    "react/no-unstable-nested-components": "error", // Vietato l'uso di componenti React instabili annidati
+    "no-unused-vars": ["error", { "args": "all" }], // Segnala tutte le variabili non utilizzate
+    "react/jsx-no-duplicate-props": "error" // Segnala l'uso di props duplicate (sensibile alle maiuscole)
+  }
+}
