@@ -1,28 +1,30 @@
-## Tabella dei Contenuti
-1. [Introduzione](#introduzione)
-2. [Requisiti di Sistema](#requisiti-di-sistema)
-3. [Installazione](#installazione)
-4. [Utilizzo](#utilizzo)
-5. [Sviluppatori](#sviluppatori)
-6. [Licenza](#licenza)
+# Configurazioni Standard per Progetti JavaScript
 
-# 1. INTRODUZIONE
-Breve descrizione del progetto qui.
+Questo repository fornisce configurazioni standard per ESLint, Prettier e file di ignore per Git e Docker, al fine di mantenere uno stile coerente e standardizzato nei tuoi progetti JavaScript.
 
-# 2. REQUISITI DI SISTEMA
-- Node.js >= vX.Y.Z
+## Funzionalità
 
-# 3. INSTALLAZIONE
-## con NPM
-- npm install
-## con YARN
-- yarn install
+### Configurazioni ESLint
+- File di configurazione separati per frontend e backend.
+- Promuove uno stile di codice coerente e best practice.
 
-# 4. UTILIZZO
-- Impostare file di ENV
+### Configurazioni Prettier
+- File di configurazione separati per frontend e backend.
+- Formattazione automatica del codice JavaScript.
 
-# 5. SVILUPPATORI
-- Yugi Sato https://github.com/YujiSatoShadapps
+### File di Ignore
+- Per Git, Docker, ESlint e Prettier.
+- Esclude file e cartelle non necessari dal versionamento e dalla costruzione delle immagini.
 
-# 6. LICENZA
-- Prodotto sviluppato da ShadApps S.r.l.
+## Utilizzo
+- Formato file Prettier e ESLint in '.jsonc' per permettere commenti, cambiare formato nel proprio progetto
+- Includi file nella radice del tuo progetto.
+
+
+## Link utili
+- ESLint -> https://eslint.org/
+- Prettier -> https://prettier.io/
+- Git -> https://git-scm.com/
+- Docker -> https://docs.docker.com/
+
+Prodotto sviluppato da ShadApps S.r.l.

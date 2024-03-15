@@ -1,0 +1,25 @@
+# Directory node_modules generata da npm
+node_modules/
+
+# Directory di output della build
+build/
+
+# File di configurazione locale
+.env
+
+# File generati automaticamente
+generated/
+
+# File di log
+*.log
+
+# Cache di sistema
+.DS_Store
+
+# File di configurazione specifici dell'IDE o dell'editor
+.vscode/
+.idea/
+
+# Dipendenze di sviluppo locali
+npm-debug.log*
+yarn-debug.log*

@@ -1,0 +1,16 @@
+# Esclude i file nella directory "dist"
+dist/
+
+# Esclude i file nella directory "node_modules"
+**/node_modules
+
+# Esclude i file Markdown
+*.md
+
+# Esclude i file di configurazione
+.eslintignore
+.eslintrc
+.prettierrc
+.prettierignore
+.dockerignore
+.gitignore

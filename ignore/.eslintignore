@@ -1,0 +1,22 @@
+# Esclude la directory "build"
+build/
+
+# Esclude la directory "dist"
+dist/
+
+# Esclude i file nella directory "node_modules"
+**/node_modules
+
+# Esclude i file generati automaticamente
+generated/
+
+# Esclude i file Markdown
+*.md
+
+# Esclude i file di configurazione
+.eslintignore
+.eslintrc
+.prettierrc
+.prettierignore
+.dockerignore
+.gitignore
